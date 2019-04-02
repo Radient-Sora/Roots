@@ -1,6 +1,6 @@
 {
   "name": "Groves",
-  "sortnum" : 6,
+  "sortnum" : 7,
   "description": "Gateways to different forms of power.$(br2)(NYI)",
   "icon": "roots:offertory_plate",
   "secret": true

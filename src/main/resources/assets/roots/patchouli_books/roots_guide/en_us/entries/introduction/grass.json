@@ -1,0 +1,33 @@
+{
+  "name": "Wildroot & Magical Seeds",
+  "icon": "minecraft:tallgrass:1",
+  "category": "introduction",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "You will want to avail yourself of the nearest cluster of tall grass. By breaking it you may discover $(l:herbs/wildroot)wildroot$()  -- which was used to craft this tome, along with terra spores and aubergine seeds."
+    },
+    {
+      "type": "runic_carving_terra_moss_template",
+      "block": "minecraft:tallgrass:1",
+      "rune": "roots:wildroot",
+      "name": "Wildroot",
+      "text": "Break tall grass with your hand or another implement to potentially find $(1:herbs/wildroot)wildroot$()."
+    },
+    {
+      "type": "runic_carving_terra_moss_template",
+      "block": "minecraft:tallgrass:1",
+      "rune": "roots:aubergine_seed",
+      "name": "Aubergine Seeds",
+      "text": "Break tall grass with your hand or another implement to potentially find $(1:resources/aubergine)aubergine seeds$()."
+    },
+    {
+      "type": "runic_carving_terra_moss_template",
+      "block": "minecraft:tallgrass:1",
+      "rune": "roots:terra_spores",
+      "name": "Terra Spores",
+      "text": "Break tall grass with your hand or another implement to potentially find $(1:herbs/terra_moss)terra spores$()."
+    }
+  ]
+}

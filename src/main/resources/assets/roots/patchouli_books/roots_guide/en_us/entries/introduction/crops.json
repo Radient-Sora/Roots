@@ -1,0 +1,12 @@
+{
+  "name": "Crops & Resources",
+  "icon": "roots:aubergine",
+  "category": "introduction",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "text",
+      "text": ""
+    }
+  ]
+}

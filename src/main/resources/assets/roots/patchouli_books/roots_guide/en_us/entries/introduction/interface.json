@@ -1,0 +1,17 @@
+{
+  "name": "Using this Book",
+  "icon": "minecraft:compass",
+  "category": "introduction",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "text",
+      "text": "While a number of entries will be available to you immediately upon obtaining this book, further entries will be unlocked upon obtaining new ingredients or crafting new equipment.$(br2)If you are ever lost for something to do, revisit old entries and ensure you've tried out new ingredients, new spells & new rituals."
+    },
+    {
+      "type": "header_text",
+      "header": "Navigation",
+      "text": "Keep an eye for a right-facing arrow in the bottom-right corner of the book, which both indicates that there are additional pages to this entry, and allows you to navigate to the next page.$(br2)You can also use the mouse scroll-wheel to flip pages between pages, and right-click anywhere in addition to clicking the back arrow to return to the previous section."
+    }
+  ]
+}

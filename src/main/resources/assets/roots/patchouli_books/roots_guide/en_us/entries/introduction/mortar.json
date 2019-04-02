@@ -1,0 +1,24 @@
+{
+    "name": "Mortar and Pestle",
+    "icon": "roots:mortar",
+    "category": "introduction",
+    "advancement": "roots:root",
+    "sortnum": 2,
+    "pages": [
+      {
+        "type": "text",
+        "text": "Once crafted, the mortar can be placed in the world. Ingredients are added to it by right-clicking them onto it. When a valid recipe is found, the output will be displayed in the HUD.$(br2)Right-clicking with the pestle will grind the ingredients, while right-clicking with an empty hand will remove ingredients."
+      },
+      {
+        "type":"crafting",
+        "recipe": "roots:pestle",
+        "recipe2": "roots:mortar",
+        "title": "Mortar & Pestle"
+      },
+      {
+        "type": "header_text",
+        "header": "Recipes",
+        "text": "In addition to the convenience of converting solid objects into a dust or powder form, the mortar is also used to convert reagents into spell powders that can be imbued into a staff.$(br2)Finally, for convenience, you can store a pestle in any empty mortar instead of carrying it around with you."
+      }
+    ]
+  }
