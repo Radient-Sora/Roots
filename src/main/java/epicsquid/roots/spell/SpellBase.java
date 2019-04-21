@@ -6,6 +6,7 @@ import epicsquid.roots.handler.SpellHandler;
 import epicsquid.roots.init.ModItems;
 import epicsquid.roots.spell.modules.SpellModule;
 import epicsquid.roots.util.PowderInventoryUtil;
+import epicsquid.roots.util.types.PropertyTable;
 import it.unimi.dsi.fastutil.objects.Object2DoubleOpenHashMap;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.EntityPlayer;
@@ -19,6 +20,8 @@ import java.util.List;
 import java.util.Map;
 
 public abstract class SpellBase {
+  protected PropertyTable properties = new PropertyTable();
+
   private float red1, green1, blue1;
   private float red2, green2, blue2;
   private String name;
@@ -42,6 +45,10 @@ public abstract class SpellBase {
     this.green2 = g2;
     this.blue2 = b2;
     this.textColor = textColor;
+  }
+
+  public PropertyTable getProperties() {
+    return properties;
   }
 
   public SpellBase addIngredients(Object... stacks) {
@@ -167,5 +174,17 @@ public abstract class SpellBase {
     ItemStack stack = new ItemStack(ModItems.spell_dust);
     SpellHandler.fromStack(stack).setSpellToSlot(this);
     return stack;
+  }
+
+  public abstract void finalise ();
+
+  public static class SpellCost {
+    public String herb;
+    public double cost;
+
+    public SpellCost(String herb, double cost) {
+      this.herb = herb;
+      this.cost = cost;
+    }
   }
 }
