@@ -1,5 +1,5 @@
 {
-  "name": "Smelter's Lick",
+  "name": "Flamelick",
   "icon": "roots:spell_dust",
   "category": "spells",
   "advancement": "roots:infernal_bulb",
@@ -11,7 +11,7 @@
     },
     {
       "type": "spell_template",
-      "spell": "spell_smelters_lick"
+      "spell": "spell_flamelick"
     }
   ]
 }

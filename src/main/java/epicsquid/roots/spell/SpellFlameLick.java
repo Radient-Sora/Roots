@@ -13,12 +13,12 @@ import net.minecraftforge.oredict.OreIngredient;
 
 import java.util.List;
 
-public class SpellSmeltersLick extends SpellBase {
-    public static String spellName = "spell_smelters_lick";
-    public static SpellSmeltersLick instance = new SpellSmeltersLick(spellName);
+public class SpellFlameLick extends SpellBase {
+    public static String spellName = "spell_flamelick";
+    public static SpellFlameLick instance = new SpellFlameLick(spellName);
 
-    public SpellSmeltersLick(String name) {
-        super(name, TextFormatting.RED, 244f / 255f, 175f / 255f, 55f / 255f, 238f / 255f, 224f / 255f, 70f / 255f);
+    public SpellFlameLick(String name) {
+        super(name, TextFormatting.RED, 238f / 255f, 34f / 255f, 13f / 255f, 238f / 255f, 224f / 255f, 70f / 255f);
         this.castType = EnumCastType.INSTANTANEOUS;
         this.cooldown = 20;
 
@@ -35,15 +35,14 @@ public class SpellSmeltersLick extends SpellBase {
     @Override
     public boolean cast(EntityPlayer player, List<SpellModule> modules) {
         World world = player.world;
-        ItemStack offStack = player.getHeldItemOffhand().copy();
+        ItemStack offStack = player.getHeldItemOffhand();
         if (!world.isRemote) {
             if(!player.getHeldItemOffhand().isEmpty()){
                 ItemStack smeltedItem = FurnaceRecipes.instance().getSmeltingResult(offStack);
                 ItemStack result = smeltedItem.copy();
                 if(!smeltedItem.isEmpty()){
-                    player.getHeldItemOffhand().shrink(1);
+                   offStack.shrink(1);
                     player.addItemStackToInventory(result);
-                    player.inventory.markDirty();
                 }
             }
         }

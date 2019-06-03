@@ -78,9 +78,9 @@ public class SpellConfig {
     @Config.Name("Disable Fae Light Spell")
     @Config.Comment("Set to true to disable Fae Light Spell")
     public boolean disableFaeLight = false;
-    @Config.Name("Disable Smelter's Lick")
-    @Config.Comment("Set to true to disable Smelter's Lick Spell")
-    public boolean disableSmeltersLick = false;
+    @Config.Name("Disable Flamelick")
+    @Config.Comment("Set to true to disable Flamelick Spell")
+    public boolean disableFlameLick = false;
 
   }
 

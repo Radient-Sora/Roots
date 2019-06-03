@@ -56,8 +56,8 @@ public class SpellRegistry {
       spellRegistry.put(SpellRampantGrowth.spellName, SpellRampantGrowth.instance);
     if (!SpellConfig.disableSpellsCategory.disableFaeLight)
       spellRegistry.put(SpellFaeLight.spellName, SpellFaeLight.instance);
-    if(!SpellConfig.disableSpellsCategory.disableSmeltersLick)
-      spellRegistry.put(SpellSmeltersLick.spellName, SpellSmeltersLick.instance);
+    if(!SpellConfig.disableSpellsCategory.disableFlameLick)
+      spellRegistry.put(SpellFlameLick.spellName, SpellFlameLick.instance);
 
     // Cannot disable Grove-related spells
     spellRegistry.put(SpellGroveSupplication.spellName, SpellGroveSupplication.instance);
