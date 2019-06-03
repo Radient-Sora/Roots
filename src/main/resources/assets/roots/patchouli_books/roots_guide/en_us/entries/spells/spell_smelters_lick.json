@@ -1,0 +1,17 @@
+{
+  "name": "Smelter's Lick",
+  "icon": "roots:spell_dust",
+  "category": "spells",
+  "advancement": "roots:infernal_bulb",
+
+  "pages": [
+    {
+      "type": "text",
+      "text": "With the intense essence of the infernal bulb you can smelt items in the off-hand."
+    },
+    {
+      "type": "spell_template",
+      "spell": "spell_smelters_lick"
+    }
+  ]
+}
